@@ -1,0 +1,24 @@
+# Tells Netlify: this site needs NO build step — just serve these files as they are.
+# This overrides whatever is typed into the Netlify UI build settings.
+
+[build]
+  command = "echo 'Static site — nothing to build.'"
+  publish = "."
+
+# Make sure edits published from /admin show up immediately instead of being cached.
+[[headers]]
+  for = "/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Keep the admin panel out of Google search results.
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

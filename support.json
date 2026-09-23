@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "kicker": "Keep the Circle Going",
+    "title": "Support & Contact",
+    "lede": "Donate, pick up some merch, or get in touch — every bit helps keep Kent's legacy alive."
+  },
+  "donate": {
+    "heading": "Donate today to help us preserve and promote Texas Music",
+    "text": "Click below to make a one-time or recurring donation through PayPal. We know these are trying times economically for everyone — thank you so much for your generosity and for helping us continue to provide a place for Texas songwriters to learn and grow.",
+    "buttonText": "Donate via PayPal",
+    "paypalUrl": "https://www.paypal.com/donate?hosted_button_id=REPLACE_WITH_YOUR_HOSTED_BUTTON_ID"
+  },
+  "merch": {
+    "heading": "Merchandise",
+    "text": "Foundation t-shirts, hats, and other gear are available — every purchase directly supports the Songwriter Circle and our education programs.",
+    "buttonText": "Shop Merchandise",
+    "shopUrl": ""
+  },
+  "membership": {
+    "heading": "Guidestar / Candid Profile",
+    "text": "The Cheatham Street Music Foundation is a registered 501(c)(3) non-profit. Our Guidestar/Candid profile has our financials and transparency information for donors.",
+    "buttonText": "View Our Guidestar Profile",
+    "url": "https://www.guidestar.org/profile/34-2044818"
+  },
+  "contact": {
+    "heading": "Get in Touch",
+    "venueName": "Cheatham Street Warehouse",
+    "address": "119 Cheatham Street, San Marcos, TX 78666",
+    "phone": "(512) 353-3777",
+    "email": "info@cheathamstreetfoundation.org",
+    "note": "For booking, press, or general Foundation questions, reach out by phone or email. For nightly show times, check the Weekly Early Shows and Songwriter Circle listings on the Programs & Events page."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "kicker": "Our Story",
+    "title": "About the Foundation",
+    "lede": "A non-profit born from a honky-tonk, dedicated to the art, business, and craft of songwriting."
+  },
+  "mission": {
+    "kicker": "Mission Statement",
+    "heading": "Why we exist",
+    "paragraphs": [
+      "The Cheatham Street Music Foundation (CSMF) is a non-profit 501(c)(3) organization dedicated to promoting, preserving, and perpetuating the songwriting legacy and vision of Kent Finlay, who devoted his life to discovering, nurturing, and developing Texas songwriters at his honky tonk, Cheatham Street Warehouse, in San Marcos, Texas.",
+      "In cooperation with Randy Rogers and fellow new owners of the honky tonk, the CSMF sponsors Kent Finlay's Songwriters' Circle on Wednesday nights and conducts other activities to advance education in the art, craft, and business of songwriting — workshops, seminars, concerts, classes, panels, lectures, internships, public forums, recording subsidies for original music, and co-sponsoring fundraising activities with other non-profit organizations to benefit Texas musicians.",
+      "The CSMF encourages greater public understanding of the history of Texas music through community-based interaction between songwriters, performing artists, and civic and educational groups, to foster a deeper appreciation of the role of music in the economic, social, and cultural life of Texas."
+    ]
+  },
+  "history": {
+    "kicker": "History",
+    "heading": "From a creaky warehouse to a Texas institution",
+    "intro": "For the family of Kent Finlay, Cheatham Street Warehouse was home — a fountain of treasured personal and musical memories — ever since Kent opened the historic honky tonk in June 1974.",
+    "timeline": [
+      {"year": "1954", "text": "A teenage Kent Finlay plays the regional FFA talent show at San Marcos' Evans Auditorium — on the same bill as a young performer named Elvis Presley."},
+      {"year": "1974", "text": "Finlay and a business partner lease a 64-year-old warehouse beside the railroad tracks on Cheatham Street. Austin's Freda (Marcia Ball) and the Firedogs play opening night to an overflow crowd — bartenders end up icing beer in an old bathtub to keep up."},
+      {"year": "2003", "text": "After Kent's first brush with multiple myeloma, he begins discussions about creating a foundation to preserve the property and its history as a place for songwriters."},
+      {"year": "2005", "text": "The Cheatham Street Music Foundation holds its first board meeting in April. Later that year, the property's owners tell Kent they plan to sell — with a deadline of November 27 to match a competing offer from a buyer who intended to bulldoze the building."},
+      {"year": "2006", "text": "Unable to meet the asking price in time, Texas State University professors Gregg Andrews and Vikki Bynum step forward and secure a personal mortgage to buy and hold the property until the Foundation could raise the funds."},
+      {"year": "2007", "text": "On August 28, the IRS grants the Foundation its 501(c)(3) non-profit status."},
+      {"year": "2010", "text": "In November, the Foundation secures its own mortgage and buys the property from Andrews and Bynum."},
+      {"year": "2015", "text": "Kent Finlay passes away on March 2. His children — Jenni, HalleyAnna, and Sterling — continue leasing the building and operating the business, managed by Sage Allen, to keep his dream alive."},
+      {"year": "2016", "text": "On December 20, ownership passes to Randy Rogers, whose career began on the Cheatham Street stage. Randy buys both the business and the physical property, fully committed to preserving Kent's legacy in cooperation with the Foundation."}
+    ]
+  },
+  "warehouse": {
+    "kicker": "The Building Itself",
+    "heading": "Cheatham Street Warehouse",
+    "paragraphs": [
+      "119 Cheatham Street, San Marcos, Texas — a former cotton warehouse that lacks in frills what it more than makes up for with stellar acoustics and an unwavering dedication to the hard-won lyrics of Texas troubadours past and present.",
+      "A Texas flag hangs behind the stage, purple and yellow lighting washes the room, and a large Shiner Beer sign welcomes visitors under a marquee reading \"Home of the Songwriter Circle.\" Bands held weekly slots from the start — Finlay's own band, High Cotton Express, played every Saturday night, while acts like Asleep at the Wheel and Alvin Crow had regular weeknight spots.",
+      "On October 13, 1975, a then-unknown George Strait made his first appearance at the Warehouse with the Ace in the Hole Band — their first gig as a band. Randy Rogers, Stevie Ray Vaughan, Todd Snider, James McMurtry, and Terri Hendrix all found their footing on the same stage.",
+      "Weathered wood, creaky floors, and neon signs give it a classic dive-bar feel — but the walls echo with the voices of legends, and the stained 8x10 photos lining them are part of the proof."
+    ]
+  },
+  "board": [
+    {"name": "John Gilliam", "role": "President", "photo": "http://cheathamstreetfoundation.org/wp-content/uploads/2015/09/john-289x300.jpg", "bio": "John Gilliam is \"Missoula Slim,\" a songwriter-singer from San Marcos, Texas. John got his moniker from Kent Finlay, \"the Godfather of Texas songwriters,\" at Cheatham Street Warehouse in 2004. Missoula has been writing and performing for the last 20 years, mostly in and around Montana, Washington and Texas, and has played venues from the Saxon Pub and Threadgill's in Austin to Riley's Tavern in Hunter. He serves as past president of the Austin Songwriters Group and performs every Wednesday at Cheatham Street starting at 5:00 PM. John is also an attorney in San Marcos, focusing on Wills, Trusts, Estate Planning, and Probate."},
+    {"name": "Jason Woolery", "role": "Secretary", "photo": "http://cheathamstreetfoundation.org/wp-content/uploads/2019/01/Jason-203x300.jpg", "bio": "Jason Woolery was born in Canyon, TX and raised mostly in Amarillo. An ordained minister whose career is in public education, he's been a lecturer in Texas State University's Department of Curriculum & Instruction since 2011, and has moonlighted as an actor and singer-songwriter since high school. Since 2012, Jason has directed the Young Songwriters' Workshop, a partnership between CSMF and the Central Texas Writing Project that gives young singer-songwriters ages 10–18 five days to workshop original material with working Texas musicians before performing live. He's been a CSMF Board Member since 2016 and Secretary since 2019."},
+    {"name": "Gary Hickinbotham", "role": "Director / Sound Engineer", "photo": "http://cheathamstreetfoundation.org/wp-content/uploads/2015/09/gary-300x225.jpg", "bio": "As chief engineer at the Fire Station, Gary recorded artists of national stature — one recording, the Texas Tornados, won a Grammy, and albums by Doug Sahm and Tish Hinojosa (which Gary co-produced) each won Indies. He's worked with Townes Van Zandt, Jerry Lee Lewis, John Hiatt, Gary P. Nunn, and Jerry Jeff Walker, among many others. He later worked as a free-lance engineer in Austin, made multi-track recordings for the Austin City Limits tribute to Stevie Ray Vaughan, and helped design an electro-pneumatic physical therapy apparatus still used in spinal cord regeneration research. Now a world-class engineer, he finds himself back at the Fire Station where his professional career began."},
+    {"name": "Sterling Finlay", "role": "Director / Performer", "photo": "", "bio": ""},
+    {"name": "Dallas Burrow", "role": "Director / Performer", "photo": "http://cheathamstreetfoundation.org/wp-content/uploads/2022/03/dallas-bio-photo-300x200.jpg", "bio": "A Texas-born Americana artist rooted in the tradition of his home state's songwriting heroes, Dallas Burrow built a career on both sides of the Atlantic with his 2019 debut, Southern Wind, which reached Number 25 on the UK Americana Chart. His second album, 2021's Dallas Burrow, marks a homecoming recorded with Bruce Robison in the rural Texas countryside. Dallas also owns and operates The Redbird Listening Room in New Braunfels, TX, a music venue focused on singer-songwriters performing original material in an intimate setting."},
+    {"name": "Doug Montgomery", "role": "Director / Legal", "photo": "http://cheathamstreetfoundation.org/wp-content/uploads/2022/02/headshot-284x300.jpg", "bio": ""},
+    {"name": "Robert Cline Jr.", "role": "Treasurer", "photo": "", "bio": ""},
+    {"name": "James Weber", "role": "Director / Sound Engineer", "photo": "", "bio": ""},
+    {"name": "Sammy Wells", "role": "Adjunct Director", "photo": "", "bio": ""}
+  ]
+}

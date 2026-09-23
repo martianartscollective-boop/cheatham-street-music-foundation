@@ -1,0 +1,229 @@
+/* ===================================================================
+   Cheatham Street Music Foundation — shared design system
+   Direction: rustic honky-tonk / vintage concert poster.
+   Sourced from real details of Cheatham Street Warehouse itself:
+   purple & yellow stage lighting, neon signage, a Texas flag behind
+   the stage, weathered wood, and decades of taped-up show posters.
+=================================================================== */
+
+:root{
+  /* Stage & wood */
+  --stage:#1c1512;         /* the warehouse at night */
+  --stage-2:#241b16;
+  --wood:#3c2a1e;          /* weathered barn wood */
+  --wood-light:#5a4028;
+
+  /* Paper & print (for reading sections) */
+  --paper:#efe4cd;
+  --paper-2:#e5d7b8;
+  --ink:#231911;
+  --ink-soft:#4a3a2a;
+
+  /* Neon & marquee */
+  --neon-pink:#e0507a;
+  --neon-pink-glow:#ff7a9d;
+  --neon-purple:#9569b8;
+  --marquee-gold:#e8b23d;
+  --marquee-gold-deep:#b8842a;
+  --bulb-yellow:#f4c430;
+
+  /* Texas flag — used sparingly, as an accent only */
+  --tx-red:#9c2b3a;
+  --tx-blue:#274a6b;
+
+  --focus:#f4c430;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto;} *{animation-duration:.01ms!important;} }
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Bitter',Georgia,serif;
+  font-size:1.05rem;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{margin:0;}
+p{margin:0;}
+a{color:inherit;}
+img{max-width:100%;display:block;}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;}
+
+.display{font-family:'Rye',serif;}
+.marquee-font{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-weight:600;}
+
+/* ---- top nav ---- */
+.topnav{
+  position:sticky;top:0;z-index:50;
+  background:var(--stage);
+  border-bottom:3px solid var(--marquee-gold);
+}
+.topnav-inner{
+  max-width:1180px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 20px;gap:20px;flex-wrap:wrap;
+}
+.brand{
+  display:flex;align-items:center;gap:12px;
+  text-decoration:none;color:var(--paper);
+}
+.brand .display{font-size:1.3rem;color:var(--marquee-gold);line-height:1;}
+.brand .brand-sub{font-size:.72rem;color:var(--paper-2);opacity:.8;}
+.navlinks{display:flex;gap:4px;flex-wrap:wrap;}
+.navlinks a{
+  text-decoration:none;color:var(--paper-2);
+  font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  font-size:.92rem;padding:10px 14px;border-radius:3px;
+  transition:color .15s ease, background .15s ease;
+}
+.navlinks a:hover{color:var(--marquee-gold);background:rgba(232,178,61,.08);}
+.navlinks a.active{color:var(--stage);background:var(--marquee-gold);}
+
+/* ---- page hero (top banner on every page) ---- */
+.page-hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse at 30% -10%, rgba(224,80,122,.35), transparent 55%),
+    radial-gradient(ellipse at 80% 0%, rgba(149,105,184,.35), transparent 50%),
+    var(--stage);
+  color:var(--paper);
+  padding:64px 20px 56px;
+  text-align:center;
+}
+.page-hero .kicker{color:var(--marquee-gold);font-size:.85rem;margin-bottom:10px;display:block;}
+.page-hero h1{
+  font-size:clamp(2.2rem,6vw,3.6rem);
+  color:var(--marquee-gold);
+  text-shadow:0 3px 0 var(--tx-red), 0 10px 26px rgba(0,0,0,.4);
+  line-height:1;
+  margin-bottom:14px;
+}
+.page-hero .lede{max-width:60ch;margin:0 auto;font-size:1.1rem;opacity:.92;}
+.bulbs{
+  position:absolute;left:0;right:0;top:10px;
+  display:flex;justify-content:space-evenly;
+  pointer-events:none;
+}
+.bulbs span{
+  width:7px;height:7px;border-radius:50%;
+  background:var(--bulb-yellow);
+  box-shadow:0 0 8px 2px rgba(244,196,48,.7);
+  opacity:.85;
+}
+
+/* ---- section shell ---- */
+section{padding:64px 20px;}
+.section-inner{max-width:1080px;margin:0 auto;}
+.section-head{margin-bottom:34px;}
+.section-head .kicker{display:block;color:var(--marquee-gold-deep);font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.85rem;margin-bottom:6px;}
+.section-head h2{font-size:clamp(1.7rem,4vw,2.3rem);color:var(--wood);}
+.section-alt{background:var(--paper-2);}
+.section-dark{background:var(--stage);color:var(--paper);}
+.section-dark .section-head h2{color:var(--marquee-gold);}
+.section-dark .section-head .kicker{color:var(--neon-pink-glow);}
+.lede{max-width:68ch;font-size:1.08rem;color:var(--ink-soft);}
+.section-dark .lede{color:var(--paper-2);}
+
+/* ---- buttons ---- */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  font-size:.95rem;padding:13px 26px;border-radius:3px;
+  text-decoration:none;border:2px solid var(--stage);cursor:pointer;
+  box-shadow:4px 4px 0 var(--stage);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--stage);}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--stage);}
+.btn-gold{background:var(--marquee-gold);color:var(--stage);}
+.btn-pink{background:var(--neon-pink);color:#fff;border-color:var(--stage);}
+.btn-outline{background:transparent;color:var(--stage);}
+.section-dark .btn-outline{color:var(--paper);border-color:var(--paper);box-shadow:4px 4px 0 rgba(0,0,0,.4);}
+
+/* ---- cards ---- */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+.card{
+  background:#fffaf0;border:1px solid rgba(60,42,30,.15);
+  border-radius:6px;padding:26px;box-shadow:0 8px 20px rgba(40,25,15,.1);
+}
+.card h3{font-family:'Rye',serif;color:var(--wood);font-size:1.2rem;margin-bottom:8px;}
+.card .meta{font-family:'Barlow Condensed',sans-serif;font-weight:600;color:var(--tx-red);font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px;}
+.card p{color:var(--ink-soft);font-size:.98rem;}
+
+/* ---- board member ---- */
+.board-card{display:flex;gap:18px;align-items:flex-start;padding:22px 0;border-bottom:1px solid rgba(60,42,30,.15);}
+.board-card:last-child{border-bottom:none;}
+.board-photo{
+  width:96px;height:96px;border-radius:4px;object-fit:cover;flex-shrink:0;
+  border:3px solid var(--paper);box-shadow:0 4px 10px rgba(0,0,0,.25);
+}
+.board-photo.placeholder{
+  background:var(--wood-light);display:flex;align-items:center;justify-content:center;
+  font-family:'Rye',serif;color:var(--marquee-gold);font-size:1.6rem;
+}
+.board-info h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.03em;font-size:1.15rem;color:var(--wood);margin-bottom:2px;}
+.board-info .role{font-size:.85rem;color:var(--tx-red);font-weight:600;margin-bottom:8px;display:block;}
+.board-info p{color:var(--ink-soft);font-size:.96rem;}
+
+/* ---- timeline (history) ---- */
+.timeline{border-left:3px solid var(--marquee-gold-deep);padding-left:24px;max-width:760px;}
+.timeline-item{margin-bottom:26px;position:relative;}
+.timeline-item::before{
+  content:"";position:absolute;left:-31px;top:6px;
+  width:12px;height:12px;border-radius:50%;background:var(--marquee-gold);border:2px solid var(--stage);
+}
+.timeline-item .yr{font-family:'Rye',serif;color:var(--wood);font-size:1.15rem;display:block;margin-bottom:4px;}
+.timeline-item p{color:var(--ink-soft);}
+
+/* ---- program tab nav (within Programs page) ---- */
+.subtabs{
+  display:flex;gap:8px;flex-wrap:wrap;
+  padding:14px 20px;background:var(--wood);
+  position:sticky;top:63px;z-index:40;
+}
+.subtabs a{
+  font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  font-size:.85rem;color:var(--paper-2);text-decoration:none;
+  padding:8px 14px;border-radius:20px;border:1px solid rgba(239,228,205,.3);
+  transition:all .15s ease;
+}
+.subtabs a:hover, .subtabs a.active{background:var(--marquee-gold);color:var(--stage);border-color:var(--marquee-gold);}
+
+/* ---- gallery ---- */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;}
+.gallery-grid img{width:100%;height:200px;object-fit:cover;border-radius:4px;border:3px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.2);}
+
+/* ---- press / list items ---- */
+.press-item{padding:20px 0;border-bottom:1px solid rgba(60,42,30,.15);}
+.press-item:last-child{border-bottom:none;}
+.press-item .date{font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--tx-red);font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;display:block;}
+.press-item p{color:var(--ink-soft);}
+
+/* ---- donate / support boxes ---- */
+.support-box{background:#fffaf0;border:2px solid var(--marquee-gold);border-radius:8px;padding:32px;text-align:center;max-width:600px;margin:0 auto;}
+.support-box h3{font-family:'Rye',serif;color:var(--wood);font-size:1.4rem;margin-bottom:12px;}
+.support-box p{color:var(--ink-soft);margin-bottom:20px;}
+
+/* ---- contact ---- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;}
+.contact-info b{display:block;font-family:'Rye',serif;color:var(--wood);font-size:1.2rem;margin-bottom:10px;}
+.contact-info p{color:var(--ink-soft);margin-bottom:8px;}
+.contact-info a{color:var(--tx-red);font-weight:600;text-decoration:underline;}
+
+/* ---- footer ---- */
+footer{background:var(--stage);color:var(--paper-2);padding:44px 20px 26px;text-align:center;}
+footer .display{color:var(--marquee-gold);font-size:1.4rem;margin-bottom:8px;}
+footer .foot-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin:16px 0;font-size:.9rem;}
+footer .foot-links a{text-decoration:none;opacity:.85;}
+footer .foot-links a:hover{opacity:1;color:var(--marquee-gold);}
+footer .fine{font-size:.78rem;opacity:.6;margin-top:16px;}
+
+@media (max-width:760px){
+  .contact-grid{grid-template-columns:1fr;}
+  .board-card{flex-direction:column;}
+  .subtabs{top:0;}
+}

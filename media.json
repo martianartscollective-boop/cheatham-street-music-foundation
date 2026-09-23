@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "kicker": "Sights & Sounds",
+    "title": "Media & Gallery",
+    "lede": "Photos from the Circle, recordings of the shows, and the news that's covered us along the way."
+  },
+  "gallery": {
+    "kicker": "Gallery",
+    "heading": "From the Cheatham stage",
+    "intro": "A running collection of photos from Songwriter Circle nights, showcases, and Foundation events. Add your own through the admin panel — drag photos in and they'll appear here.",
+    "photos": [
+      {"img": "http://cheathamstreetfoundation.org/wp-content/uploads/2015/08/KENT-1024x685.jpg", "caption": "Kent Finlay on the Cheatham Street stage"}
+    ]
+  },
+  "audio": {
+    "kicker": "Live Audio",
+    "heading": "Live Audio From Circle Shows",
+    "text": "Recordings from past Songwriter Circle nights are archived for listening. Check the Foundation's Facebook page for the latest uploads and live streams.",
+    "linkText": "Listen on Facebook",
+    "linkUrl": "https://www.facebook.com/CheathamStreet/"
+  },
+  "press": [
+    {
+      "date": "April 14, 2022",
+      "text": "The Cheatham Street Music Foundation is pleased to announce the results of its first fundraiser at the Redbird Listening Room in New Braunfels, Texas. This intimate concert featured Susan Gibson, Kyle Reed (of the Reed Brothers), Eric Middleton (of Midnight River Choir), and Dallas Burrow, all performing donated sets. As a result, CSMF raised $2,000 to help fund its ongoing support of Kent Finlay's Songwriters' Circle, The Redbird Songwriters' Night, and other showcases and events."
+    }
+  ],
+  "social": {
+    "heading": "Follow along",
+    "text": "The Foundation posts show announcements, recordings, and photos on Facebook first.",
+    "linkText": "Visit our Facebook Page",
+    "linkUrl": "https://www.facebook.com/CheathamStreet/"
+  }
+}

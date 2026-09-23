@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media & Gallery — Cheatham Street Music Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Barlow+Condensed:wght@500;600;700&family=Bitter:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="media">
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a href="index.html" class="brand">
+      <span class="display">Cheatham Street</span>
+      <span class="brand-sub">Music Foundation</span>
+    </a>
+    <div class="navlinks">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="about.html" data-page="about">About</a>
+      <a href="programs.html" data-page="programs">Programs &amp; Events</a>
+      <a href="media.html" data-page="media">Media &amp; Gallery</a>
+      <a href="support.html" data-page="support">Support &amp; Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero" id="pageHero"></header>
+
+<section id="gallerySection"><div class="section-inner" id="galleryContent"></div></section>
+
+<section class="section-alt" id="audioSection"><div class="section-inner" id="audioContent"></div></section>
+
+<section id="pressSection">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="kicker marquee-font">In The News</span>
+      <h2 class="display">Press Releases</h2>
+    </div>
+    <div id="pressList"></div>
+  </div>
+</section>
+
+<section class="section-dark" id="socialSection">
+  <div class="section-inner" style="text-align:center;" id="socialContent"></div>
+</section>
+
+<footer id="footerContent">
+  <div class="display">Cheatham Street Music Foundation</div>
+  <p style="opacity:.85;">119 Cheatham Street · San Marcos, TX</p>
+  <div class="foot-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs &amp; Events</a>
+    <a href="media.html">Media &amp; Gallery</a>
+    <a href="support.html">Support &amp; Contact</a>
+    <a href="https://www.facebook.com/CheathamStreet/" target="_blank" rel="noopener">Facebook</a>
+  </div>
+  <p class="fine">A 501(c)(3) non-profit preserving the legacy of Kent Finlay and Cheatham Street Warehouse.</p>
+</footer>
+
+<script src="site.js"></script>
+<script>
+const DEFAULT_MEDIA = {"hero": {"kicker": "Sights & Sounds", "title": "Media & Gallery", "lede": "Photos from the Circle, recordings of the shows, and the news that's covered us along the way."}, "gallery": {"kicker": "Gallery", "heading": "From the Cheatham stage", "intro": "A running collection of photos from Songwriter Circle nights, showcases, and Foundation events. Add your own through the admin panel — drag photos in and they'll appear here.", "photos": [{"img": "http://cheathamstreetfoundation.org/wp-content/uploads/2015/08/KENT-1024x685.jpg", "caption": "Kent Finlay on the Cheatham Street stage"}]}, "audio": {"kicker": "Live Audio", "heading": "Live Audio From Circle Shows", "text": "Recordings from past Songwriter Circle nights are archived for listening. Check the Foundation's Facebook page for the latest uploads and live streams.", "linkText": "Listen on Facebook", "linkUrl": "https://www.facebook.com/CheathamStreet/"}, "press": [{"date": "April 14, 2022", "text": "The Cheatham Street Music Foundation is pleased to announce the results of its first fundraiser at the Redbird Listening Room in New Braunfels, Texas. This intimate concert featured Susan Gibson, Kyle Reed (of the Reed Brothers), Eric Middleton (of Midnight River Choir), and Dallas Burrow, all performing donated sets. As a result, CSMF raised $2,000 to help fund its ongoing support of Kent Finlay's Songwriters' Circle, The Redbird Songwriters' Night, and other showcases and events."}], "social": {"heading": "Follow along", "text": "The Foundation posts show announcements, recordings, and photos on Facebook first.", "linkText": "Visit our Facebook Page", "linkUrl": "https://www.facebook.com/CheathamStreet/"}};
+
+function render(data){
+  renderHero(data);
+
+  document.getElementById('galleryContent').innerHTML = `
+    <div class="section-head">
+      <span class="kicker">${esc(data.gallery.kicker)}</span>
+      <h2 class="display">${esc(data.gallery.heading)}</h2>
+      <p class="lede" style="margin-top:10px;">${esc(data.gallery.intro)}</p>
+    </div>
+    <div class="gallery-grid">
+      ${data.gallery.photos.map(p => `<img src="${esc(p.img)}" alt="${esc(p.caption)}" title="${esc(p.caption)}">`).join('')}
+    </div>
+  `;
+
+  document.getElementById('audioContent').innerHTML = `
+    <div class="section-head">
+      <span class="kicker">${esc(data.audio.kicker)}</span>
+      <h2 class="display">${esc(data.audio.heading)}</h2>
+    </div>
+    <p class="lede" style="margin-bottom:20px;">${esc(data.audio.text)}</p>
+    <a href="${esc(data.audio.linkUrl)}" target="_blank" rel="noopener" class="btn btn-outline">${esc(data.audio.linkText)}</a>
+  `;
+
+  document.getElementById('pressList').innerHTML = data.press.map(p => `
+    <div class="press-item">
+      <span class="date">${esc(p.date)}</span>
+      <p>${esc(p.text)}</p>
+    </div>
+  `).join('');
+
+  document.getElementById('socialContent').innerHTML = `
+    <h2 class="display" style="font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:14px;">${esc(data.social.heading)}</h2>
+    <p class="lede" style="margin:0 auto 24px;">${esc(data.social.text)}</p>
+    <a href="${esc(data.social.linkUrl)}" target="_blank" rel="noopener" class="btn btn-gold">${esc(data.social.linkText)}</a>
+  `;
+}
+
+loadContent('media.json', render, DEFAULT_MEDIA);
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "kicker": "San Marcos, Texas · Est. 1974",
+    "title": "Cheatham Street Music Foundation",
+    "lede": "Preserving the honky-tonk where George Strait, Stevie Ray Vaughan, and generations of Texas songwriters got their start."
+  },
+  "intro": {
+    "kicker": "The Godfather of Texas Songwriters",
+    "heading": "Kent Finlay's legacy, carried forward",
+    "paragraphs": [
+      "Kent Finlay, a sharp songwriter and arguably the most respected lyrical editor statewide, lived and breathed Texas music. During his life, Finlay made no bones. His beloved Cheatham Street Warehouse has always existed for creation. Songs begin on Cheatham's stage. They grow. Breathe. Live. Earn more miles. Finally, they mature into shape. Finlay's mission must remain intact.",
+      "Enter the Cheatham Street Music Foundation. The Foundation, a non-profit which develops, promotes and preserves Texas music, carries on Finlay's singular legacy with the endless energy and enthusiasm he offered his friends and followers. As Finlay would have it, the Foundation particularly focuses on the art, business and craft of songwriting.",
+      "For more than forty years, Finlay invested everything in his beloved Cheatham Street Warehouse. Results spoke for themselves. Consider just a half dozen songwriters who launched their careers from the Cheatham Stage: George Strait. Stevie Ray Vaughan. Randy Rogers. Todd Snider. James McMurtry. Terri Hendrix."
+    ],
+    "photo": "http://cheathamstreetfoundation.org/wp-content/uploads/2015/08/KENT-1024x685.jpg"
+  },
+  "stats": [
+    {"value": "1974", "label": "Warehouse opens its doors"},
+    {"value": "2007", "label": "Granted 501(c)(3) status"},
+    {"value": "50+", "label": "Years of Texas songwriting"},
+    {"value": "Every Wed", "label": "Songwriter Circle, still going"}
+  ],
+  "highlights": [
+    {"title": "Kent Finlay's Songwriter Circle", "desc": "Every Wednesday night — the golden-rule listening room where it all still happens.", "link": "programs.html#circle"},
+    {"title": "Weekly Early Shows", "desc": "Free residency shows from artists who came up through the Circle.", "link": "programs.html#early-shows"},
+    {"title": "Young Songwriters Workshop", "desc": "A summer week for ages 10–18 to write, workshop, and perform original songs.", "link": "programs.html#ysw"}
+  ],
+  "cta": {
+    "heading": "Help keep the stage lit",
+    "text": "The Foundation runs on donations, memberships, and people who believe a honky-tonk can be a classroom. Every dollar goes toward preserving Kent's legacy and developing the next generation of Texas songwriters.",
+    "buttonText": "Support the Foundation",
+    "buttonLink": "support.html"
+  }
+}

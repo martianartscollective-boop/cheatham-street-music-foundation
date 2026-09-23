@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "kicker": "What's Happening On Stage",
+    "title": "Programs & Events",
+    "lede": "From the Wednesday night Circle to summer camp for teenage songwriters — this is how the Foundation keeps Kent's mission alive."
+  },
+  "tabs": [
+    {"id": "circle", "label": "Songwriter Circle"},
+    {"id": "early-shows", "label": "Weekly Early Shows"},
+    {"id": "showcase", "label": "Showcase Series"},
+    {"id": "ysw", "label": "Young Songwriters"},
+    {"id": "dreamerfest", "label": "DreamerFest"},
+    {"id": "soldier-songs", "label": "Soldier Songs & Voices"},
+    {"id": "redbird", "label": "Redbird Listening Room"},
+    {"id": "past", "label": "Past Programs"}
+  ],
+  "programs": [
+    {
+      "id": "circle",
+      "title": "Kent Finlay's Songwriter Circle",
+      "when": "Every Wednesday Night · Cheatham Street Warehouse, San Marcos",
+      "paragraphs": [
+        "The songwriters who perform at Kent's Songwriter Circle have always been treated as equals — and with equal reverence. It's a \"golden rule\" listening night: everyone who attends pays as much attention to the artist on stage as they'd expect others to pay to them.",
+        "As Kent used to remind the room when he kicked off the show at nine o'clock, this is \"church,\" and \"we're here to listen.\" It's kept the Circle from ever becoming a place where people play and pack up and leave — it's stayed genuinely magical for listeners and writers alike, decade after decade."
+      ]
+    },
+    {
+      "id": "early-shows",
+      "title": "Weekly Early Shows",
+      "when": "Weekday afternoons & evenings · Cheatham Street Warehouse",
+      "paragraphs": [
+        "The Foundation sponsors free early residency shows at the Warehouse, funded in part by the San Marcos Arts Commission. Each artist is selected from Wednesday night's Songwriter Circle or the sponsored Thursday night Redbird Songwriters' Night — a way of putting the Circle's brightest talent on stage more than once a week.",
+        "Stop by to catch a free show and support the residency artists keeping the tradition of Texas songwriting alive. Current-season times and performers are kept up to date below."
+      ],
+      "schedule": [
+        {"day": "Wednesdays", "time": "5:00 PM – 6:30 PM", "who": "Rankin Hardin"},
+        {"day": "Wednesdays", "time": "6:30 PM – 8:00 PM", "who": "Marshall Matheny"}
+      ]
+    },
+    {
+      "id": "showcase",
+      "title": "Songwriter Showcase Series",
+      "when": "Select evenings · Cheatham Street Warehouse",
+      "paragraphs": [
+        "The Foundation's Songwriter Series pairs two songwriters a night for an evening built entirely around original material — funded in part by the San Marcos Arts Commission. It's brought some of the most respected names in Texas songwriting to the Cheatham stage, including Terri Hendrix & Susan Gibson.",
+        "Recent Series shows have featured The Weeping Willows and Dustin Welch with HalleyAnna Welch, Big John Mills and Jay White, Robert Cline Jr. and Sterling Finlay, and Missoula Slim and Erich Siemens, among many others. A special thanks goes out to every artist and every fan who's helped make the Series what it is."
+      ]
+    },
+    {
+      "id": "ysw",
+      "title": "Young Songwriters Workshop",
+      "when": "Annual summer week · Ages 10–18",
+      "paragraphs": [
+        "YSW is a partnership between CSMF and the Central Texas Writing Project — Texas State University's chapter of the National Writing Project. It's an annual summer day-camp giving young singer-songwriters ages 10 to 18 the chance to spend five days workshopping original material alongside a variety of working Texas musicians.",
+        "At the end of the week, campers perform their material live, in concert, in front of family and friends. The workshop has been directed by board member Jason Woolery since 2012."
+      ]
+    },
+    {
+      "id": "dreamerfest",
+      "title": "DreamerFest",
+      "when": "'22 & '23",
+      "paragraphs": [
+        "DreamerFest brought together songwriters and fans for a dedicated Foundation fundraiser and celebration, held in 2022 and 2023. Details on future editions of the festival will be announced here as they're scheduled — check back, or follow the Foundation on Facebook for updates."
+      ]
+    },
+    {
+      "id": "soldier-songs",
+      "title": "Soldier Songs and Voices",
+      "when": "Ongoing · National & Online",
+      "paragraphs": [
+        "Soldier Songs and Voices is an independent non-profit that provides instruments and songwriting lessons free of charge to armed forces veterans as a form of post-conflict care, typically meeting weekly or bi-monthly in sessions led by professional musicians.",
+        "The act of learning an instrument and the art of songwriting have been shown to help rebuild damaged synaptic pathways from traumatic brain injuries and post-traumatic stress. Cheatham Street Warehouse is where the idea for Soldier Songs and Voices began, and the Foundation remains committed to giving veterans the tools to turn their stories into songs so their voices can be heard."
+      ]
+    },
+    {
+      "id": "redbird",
+      "title": "The Redbird Listening Room Songwriter's Night",
+      "when": "Every Thursday Evening · New Braunfels, TX",
+      "paragraphs": [
+        "A sponsored sister event to the Wednesday Circle, held every Thursday evening at The Redbird Listening Room in New Braunfels — an intimate venue owned and operated by board member Dallas Burrow, where the focus stays squarely on singer-songwriters performing original material.",
+        "The Foundation's first fundraiser at the Redbird, held March 31, 2022, featured Susan Gibson, Kyle Reed of the Reed Brothers, Eric Middleton of Midnight River Choir, and Dallas Burrow — all performing donated sets. The show raised $2,000 to help fund the ongoing Circle, Redbird Songwriters' Night, and other showcases."
+      ]
+    },
+    {
+      "id": "past",
+      "title": "Past Programs",
+      "when": "Archive",
+      "paragraphs": [
+        "Over the years the Foundation has hosted and sponsored a wide range of one-off concerts, fundraisers, and special events — including BIGfest, a multi-day music festival celebrating Cheatham Street Warehouse's anniversary. Photos and recordings from many past programs live in the Media & Gallery section."
+      ]
+    }
+  ]
+}
